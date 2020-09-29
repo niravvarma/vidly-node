@@ -1,0 +1,8 @@
+{
+  "jwtPrivateKey": "vidly_jwtPrivateKey",
+  "dbUser": "vidly_dbUser",
+  "dbPass": "vidly_dbPass",
+  "dbName": "vidly_dbName",
+  "dbCluster": "vidly_dbCluster",
+  "dbParams": "vidly_dbParams"
+}

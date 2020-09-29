@@ -1,0 +1,6 @@
+export vidly_jwtPrivateKey="mySecureKey"
+export vidly_dbUser=""
+export vidly_dbPass=""
+export vidly_dbName="vidly"
+export vidly_dbCluster="@node-cluster-shard-00-00.pcqog.mongodb.net:27017,node-cluster-shard-00-01.pcqog.mongodb.net:27017,node-cluster-shard-00-02.pcqog.mongodb.net:27017/"
+export vidly_dbParams="?ssl=true&replicaSet=atlas-7azcqz-shard-0&authSource=admin&retryWrites=true&w=majority"

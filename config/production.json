@@ -1,0 +1,8 @@
+{
+  "jwtPrivateKey": "",
+  "dbUser": "",
+  "dbPass": "",
+  "dbName": "",
+  "dbCluster": "",
+  "dbParams": ""
+}
