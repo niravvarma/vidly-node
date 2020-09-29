@@ -20,9 +20,9 @@ Following are lists of softwares and their version which I used to develop the a
 |       IDE       |      VS Code 1.49.2      |
 |     Iterm2      |          3.3.12          |
 
-- Theme for VS Code: Ayu Mirage
-- File Icon Theme for VS Code: Material Icon
-- Theme for Iterm2: agnoster
+- Theme for VS Code: Ayu Mirage - https://marketplace.visualstudio.com/items?itemName=teabyii.ayu
+- File Icon Theme for VS Code: Material Icon - https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+- Theme for Iterm2: agnoster - https://ethanschoonover.com/solarized/
 
 ## Setup
 
@@ -49,14 +49,14 @@ As I used MongoDB Atlas, I provided a few more details for connection with Mongo
 
 These properties are explained below.
 
-1. vidly_jwtPrivateKey - set a random text for e.g. "mySecretKey"
-2. vidly_dbUser - your MongoDB Atlas cluster DB user which you created
-3. vidly_dbPass - your MongoDB Atlas cluster DB password which you created
-4. vidly_dbName - MongoDB Collection name
-5. vidly_dbCluster - This was little tricky. When I tried to connect using details provided in 'Under Data Storage > Clusters' with version 1.12 or later, the application failed. After a little research, I found that in order to connect with Mongoose (which connects Node application to MongoDB), I had to select the version 1.11 or earlier from 'Under Data Storage > Clusters' and then use that value. Here you would need to provide value like this --> "@node-cluster-shard-00-00.pcqog.mongodb.net:27017,node-cluster-shard-00-01.pcqog.mongodb.net:27017,node-cluster-shard-00-02.pcqog.mongodb.net:27017/"
-6. vidly_dbParams - Again, with the version which I selected, there were extra params, so I provided them. Value which I provided was like this ---> "?replicaSet=atlas-7azcqz-shard-0&ssl=true&authSource=admin"
+1. **vidly_jwtPrivateKey** - set a random text for e.g. "mySecretKey"
+2. **vidly_dbUser** - your MongoDB Atlas cluster DB user which you created
+3. **vidly_dbPass** - your MongoDB Atlas cluster DB password which you created
+4. **vidly_dbName** - MongoDB Collection name
+5. **vidly_dbCluster** - This was little tricky. When I tried to connect using details provided in 'Under Data Storage > Clusters' with version 1.12 or later, the application failed. After a little research, I found that in order to connect with Mongoose (which connects Node application to MongoDB), I had to select the version 1.11 or earlier from 'Under Data Storage > Clusters' and then use that value. Here you would need to provide value like this --> "@node-cluster-shard-00-00.pcqog.mongodb.net:27017,node-cluster-shard-00-01.pcqog.mongodb.net:27017,node-cluster-shard-00-02.pcqog.mongodb.net:27017/"
+6. **vidly_dbParams** - Again, with the version which I selected, there were extra params, so I provided them. Value which I provided was like this ---> "?replicaSet=atlas-7azcqz-shard-0&ssl=true&authSource=admin"
 
-I have included both files: prodenv.sh and testenv.sh under local folder but you will have to add your own DB properties. Before you run the application, add your properties and simply run the following command on terminal:
+I have included both files: **prodenv.sh** and **testenv.sh** under local folder but you will have to add your own DB properties. Before you run the application, add your properties and simply run the following command on terminal:
 
 > source prodenv.sh
 
