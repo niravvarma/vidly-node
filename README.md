@@ -1,10 +1,10 @@
 ## Vidly - a Node.js application (SEP 2020)
 
-This repo contains application which runs an imaginary video rental nodejs application with Express for handling middleware, MongoDB Atlas for db and deployment on Heroku. Purpose of this application was to learn NodeJS not an actual application to be used for production.
+This repo contains application which runs an imaginary video rental nodejs application with ExpressJS for handling middleware, MongoDB Atlas for db and deployment on Heroku. Purpose of developing this application was to learn NodeJS, not to built an actual application to be used for production.
 
 **NOTE**: This project was developed by learning NodeJS tutorial from Mosh Hamedani - https://codewithmosh.com/p/the-complete-node-js-course. You can find the original repository here: https://github.com/mosh-hamedani/vidly-api-node
 
-I did not forked the original repository because I had little different setup that included different versions of some node modules (check package.json) and have used MongoDB Atlas (https://www.mongodb.com/cloud/atlas) which is a cloud offering rather than installing MongoDB which was little headache to install.
+I did not forked the original repository because I had little different setup that included different versions of some node modules (check package.json) and have used MongoDB Atlas (https://www.mongodb.com/cloud/atlas) which is a cloud offering rather than installing MongoDB on local machine.
 
 ## Software and Versions
 
