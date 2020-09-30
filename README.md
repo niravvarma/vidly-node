@@ -69,9 +69,11 @@ Once properties are set, you can test your application using Postman.
 
 ### Conclusion
 
-It was an awesome experience learning NodeJS application with the Mosh's tutorial. Hats-off to him for making good quality lecturs and upto the point. His step-by-step guide made learning very easy. I recommend Mosh's course for NodeJS to all of you whoever is interested in learning NodeJS.
+It was an awesome experience learning NodeJS application with the Mosh's tutorial. Hats-off to him for making good quality lectures and upto the point. His step-by-step guide made learning very easy. I recommend Mosh's course for NodeJS to all of you whoever is interested in learning NodeJS.
 
 ### Further Development
 
-This project was developed by installing nearly same modules and software as recommended in the course but still there were some deviations. I have also added some learnings in the files as commenst so I hope that you don't get irritated.
-Next, I am going to install the latest softwares and modules and will try to achieve the same application using the latest installations.
+This project was developed by installing nearly same modules and software as recommended in the course but still there were some deviations. I have also added some learnings in the files as comments so I hope that you don't get irritated.
+
+What's next? 
+I am going to install the latest softwares and modules and will try to achieve the same application using the latest installations.
