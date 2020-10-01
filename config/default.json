@@ -4,5 +4,7 @@
   "dbPass": "",
   "dbName": "",
   "dbCluster": "",
-  "dbParams": ""
+  "dbParams": "",
+  "port": "",
+  "requireAuth": ""
 }

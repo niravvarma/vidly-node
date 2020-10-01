@@ -4,5 +4,7 @@
   "dbPass": "vidly_dbPass",
   "dbName": "vidly_dbName",
   "dbCluster": "vidly_dbCluster",
-  "dbParams": "vidly_dbParams"
+  "dbParams": "vidly_dbParams",
+  "port": "vidly_port",
+  "requireAuth": "vidly_auth"
 }

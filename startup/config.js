@@ -8,6 +8,8 @@ module.exports = function () {
     "dbName",
     "dbCluster",
     "dbParams",
+    "port",
+    "requireAuth",
   ];
   for (const prop of props) {
     if (!config.get(prop)) {

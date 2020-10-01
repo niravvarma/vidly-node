@@ -21,13 +21,14 @@ let url =
 url = "mongodb://" + user + dbCluster + dbName + dbParams;
 
 require("./startup/logging")(url);
+require("./startup/cors")(app);
 require("./startup/routes")(app);
 require("./startup/db")(url);
 require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || config.get("port") || 3000;
 const server = app.listen(port, () => {
   winston.info(`listening on port ${port} at ${new Date()}`);
   winston.info(`Trying to connect to db: ${dbName}`);
