@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
-const config = require("config");
-const Joi = require("joi");
-const jwt = require("jsonwebtoken");
+const mongoose = require('mongoose');
+const config = require('config');
+const Joi = require('joi');
+const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -28,22 +28,31 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Information Expert Principle
-// We may need token at various API for authentication, we generate JWT token
-// This JWT token needs to be generated at User level according to Information Expert Principle as
-// User should generate the token (Think of a chef and waiter example. Chef needs to prepare the dish where as waiter will simply take the order for the dish)
-// Also, we don't have to change at various places where we need token
+/*
+  Information Expert Principle
+  -----------------------------
+  1. We may need token at various API for authentication so we generate JWT token
+     This JWT token should be generated in User model according to Information Expert Principle as
+     User should generate the token 
+  
+  Analogy: 
+    - Think of a chef and waiter example. 
+    - Chef needs to prepare the dish where as waiter will simply take the order
+
+  2. Also, we don't have to change at various places whenever we need token
+     and if any code changes required
+*/
 userSchema.methods.generateAuthToken = function () {
   const token = jwt.sign(
     { _id: this._id, isAdmin: this.isAdmin },
-    config.get("jwtPrivateKey")
+    config.get('jwtPrivateKey')
   );
-  // again, here this refers to the object which is passed in order to get the token
+  // here 'this' refers to the object which is passed in order to get the token
   // so we cannot use arrow function
   return token;
 };
 
-const User = new mongoose.model("User", userSchema);
+const User = new mongoose.model('User', userSchema);
 
 function validateUser(user) {
   const schema = Joi.object({
